@@ -1,0 +1,84 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:background="#556B2F"> <!-- Olive green background -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"> <!-- Centering content -->
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- White text -->
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_login"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" /> <!-- White text -->
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_title"
+            android:layout_marginTop="32dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_below="@id/editText_username"
+            android:layout_marginTop="16dp"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/checkBox_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep me logged in"
+            android:layout_below="@id/editText_password"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"/> <!-- White text -->
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:layout_below="@id/checkBox_remember"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#228B22"/> <!-- Forest green button -->
+    </LinearLayout>
+</RelativeLayout>

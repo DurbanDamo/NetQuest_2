@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NetQuest_2</string>
+    <string-array name="measurement_systems">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+</resources>
